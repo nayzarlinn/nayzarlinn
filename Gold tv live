@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PlayIDTV TV DooTV</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+$('#myInput').on('input', function() {
+var value = $(this).val().toLowerCase();
+$('.gallery >.poster').filter(function() {
+$(this).toggle($(this).find('a').attr('title').toLowerCase().indexOf(value) > -1)});});});
+</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{user-select:none;margin:0;padding:0;box-sizing:border-box;outline:none;user-select:none;}
+body{background:#151515;}
+#xs-header{background:#000;left: 0;position: fixed;top: 0;width: 100%;z-index: 90;height: 8%;}
+.xsposter{margin:0px;position:relative;display:inline-block;overflow-x:scroll;overflow-y:hidden;}
+play{background:#000;color:#fff;padding:5px;left:0;right:0;height:2.5em;display:flex;flex-direction:row;align-items:center;justify-content:space-between;text-decoration:none;cursor:pointer;}
+.wrapper{margin:0px;max-width:1100px;}
+.wrapper nav{display:flex;justify-content:center;}
+.wrapper .items{display:flex;max-width:720px;width:100%;justify-content:space-between;overflow:auto;}
+.items span{background:#000;color:#fff;padding:7px 25px;font-size:14px;cursor:pointer;border:0px solid #ddd;transition: all 0.3s ease;}
+.items span.active{color:#fff;background:#ff0014;}
+.gallery{display: flex;flex-wrap: wrap;margin-top: 3px;}
+.gallery .poster{width: calc(100% / 3);padding:5px;}
+.gallery .poster span{display: flex;width: 100%;overflow: hidden;}
+.gallery .poster img{background:#fff;border-radius:7px;vertical-align: middle;transition: all 0.3s ease;cursor: pointer;}
+.gallery .poster.hide{display: none;}
+@keyframes animate {
+0%{transform: scale(0.5);}
+100%{transform: scale(1);}}
+@media (max-width: 1000px) {
+.gallery .poster{width: calc(100% / 6);}}
+@media (min-width: 1360px) {
+.gallery {margin-left: -10%;margin-right: -10%;}}
+@media (max-width: 800px) {
+.gallery .poster{width: calc(100% / 5);}}
+@media (max-width: 700px) {
+.wrapper nav .items{max-width: 1000px;}nav .items span{padding: 7px 15px}}
+@media (max-width: 600px) {
+.wrapper{margin: 0px auto;}
+.wrapper nav .items{overflow: auto;}
+nav .items span{margin:0px;}
+.gallery .poster{width: calc(100% / 3);}}
+
+.xaviec{background:#000;position:fixed;top:-5px;width:100%;}
+</style>
+</head>
+<body>
+<div class="xaviec">
+<play>
+<h1 style="color:#fff005;font-size:15px;">MYANMAR THAR KAUNGS<strong style="color:#ff0064;">ONLINE MEDIA</strong></h1>
+</play>
+<div class="wrapper">
+<nav><div class="items">
+<span class="item active" data-name="all">HOME</span>
+<span class="item" data-name="sport">SPORT</span>
+<span class="item" data-name="movies">MOVIE</span>
+<span class="item" data-name="2D">2D/3D</span>
+
+<span class="item" data-name="cartoon">KIDS</span>
+<span class="item" data-name="news">NEWS</span>
+<span class="item" data-name="GoodTv">GoodTV</span>
+</div></nav></div></div><br><br><br><br>
+<div class="gallery">
+<a href="https://www.hlsplayer.org/play?url=https%3A%2F%2F692825220610.eu-west-1.playback.live-video.net%2Fapi%2Fvideo%2Fv1%2Feu-west-1.731013537001.channel.oQOxa7nQl8hd.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="MANU TV">
+<div class="poster" data-name="sport"><span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_50ZXlpIHSdGPYLNgOV2jFAobNlmYPPz6tA&usqp=CAU" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">MANU TV</p>
+</div>
+<a href="http://AllLiveSportsLinks.hopto.org:80/hls/Star_Sport_Select1HD.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="STAR 1">
+<div class="poster" data-name="sport"><span><img src="http://todayvisionbd.com/tv/img/channels/select.png" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">STAR 1</p>
+</div>
+<a href="http://AllLiveSportsLinks.hopto.org:80/hls/select2.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="STAR 2">
+<div class="poster" data-name="sport"><span><img src="http://download.lakshmipuronline.com/uploads/tv_image/sm/star-sport-select-2.jpg" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">STAR 2</p>
+</div>
+<a href="http://ranapk.ddns.net/hls/Star_Sport_Select1HD.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="STAR 1">
+<div class="poster" data-name="sport"><span><img src="http://todayvisionbd.com/tv/img/channels/select.png" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">STAR 1</p>
+</div>
+<a href="http://ranapk.ddns.net/hls/select2.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="STAR 2">
+<div class="poster" data-name="sport"><span><img src="http://download.lakshmipuronline.com/uploads/tv_image/sm/star-sport-select-2.jpg" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">STAR 2</p>
+</div>
+<a href="https://cdn.xtemus.com/m3player.php?id=https://td.chowdhury-shaheb.com/live/nb-sonysix_720p/playlist.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="SONY SIX">
+<div class="poster" data-name="sport"><span><img src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Six_HD.png
+" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">SONY SIX</p>
+</div>
+<a href="http://103.139.171.5:5001/play.php?c=Six_HD#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="SONY SIX">
+<div class="poster" data-name="sport"><span><img src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Six_HD.png
+" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">SONY SIX</p>
+</div>
+<a href="http://103.139.171.5:5001/play.php?c=Ten_HD#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="TEN 1">
+<div class="poster" data-name="sport"><span><img src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Ten_HD.png
+" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">TEN 1</p>
+</div>
+<a href="https://cdn.xtemus.com/m3player.php?id=https://td.chowdhury-shaheb.com/td/sonyten1/playlist.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="TEN 1">
+<div class="poster" data-name="sport"><span><img src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Ten_HD.png
+" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">TEN 1</p>
+</div>
+<a href="http://103.139.171.5:5001/play.php?c=Ten2_HD#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="TEN 2">
+<div class="poster" data-name="sport"><span><img src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Ten2_HD.png
+" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">TEN 2</p>
+</div>
+<a href="https://cdn.xtemus.com/m3player.php?id=https://td.chowdhury-shaheb.com/td/sonyten2/playlist.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="TEN 2">
+<div class="poster" data-name="sport"><span><img src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Ten2_HD.png
+" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">TEN 2</p>
+</div>
+<a href="http://103.139.171.5:5001/play.php?c=Ten3_HD#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="TEN 3">
+<div class="poster" data-name="sport"><span><img src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Ten3_HD.png
+" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">TEN 3</p>
+</div>
+<a href="https://cdn.xtemus.com/m3player.php?id=https://td.chowdhury-shaheb.com/td/sonyten3/playlist.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="TEN 3">
+<div class="poster" data-name="sport"><span><img src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Ten3_HD.png
+" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">TEN 3</p>
+</div>
+<a href="http://103.139.171.5:5001/play.php?c=Ten_4_Tamil#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;en" title="TEN 4">
+<div class="poster" data-name="sport"><span><img src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Ten_4_HD_Tamil.png
+" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">TEN 4</p>
+</div>
+<a href="http://103.139.171.5:5001/play.php?c=Ten_4_HD_Tamil&q=400&e=.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;en" title="TEN 4">
+<div class="poster" data-name="sport"><span><img src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Ten_4_HD_Tamil.png
+" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">TEN 4</p>
+</div>
+<a href="http://ranapk.ddns.net/hls/t-sports.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="T SPORT">
+<div class="poster" data-name="sport"><span><img src="http://ranapk.ddns.net/img/tsports.jpg
+" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">T SPORT</p>
+</div>
+<a href="http://ranapk.ddns.net/hls/ptv.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="PTV SPORT">
+<div class="poster" data-name="sport"><span><img src="http://ranapk.ddns.net/img/ptv.jpg
+" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">PTV SPORT</p>
+</div>
+
+<a href="https://epiconvh.s.llnwi.net/gubbare/master.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="CH 1">
+<div class="poster" data-name="cartoon"><span><img src="https://i.pinimg.com/originals/69/d1/a9/69d1a9de8989cfced22def4b3b87277c.gif" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">CH 1</p>
+</div>
+<a href="https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=61&live=1&app_bundle=com.plexapp.desktop&did=df8e1a36-847d-5096-86a7-3803ed330ede&app_domain=app.plex.tv&app_name=plex&h=691&w=1224&content_title=MorUy57ijWhGe4ixZb_T&content_series=5f170d64b898490041b4938f&custom4=plex&gdpr=1&device_make=Windows&device_model=Firefox&coppa=0&us_privacy=1---#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="CH 2">
+<div class="poster" data-name="cartoon"><span><img src="https://i.pinimg.com/originals/69/d1/a9/69d1a9de8989cfced22def4b3b87277c.gif" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">CH 2</p>
+</div>
+<a href="http://61.19.242.134/feed/202105171329/LC38/index.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="CH 3">
+<div class="poster" data-name="cartoon"><span><img src="https://i.pinimg.com/originals/69/d1/a9/69d1a9de8989cfced22def4b3b87277c.gif" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">CH 3</p>
+</div>
+<a href="https://tc-live1.sanook.com/live/22302_ch9.m3u8?bizid=22302&txSecret=0c0de0596ea91c9d776c1d30dfe82cea&txTime=6102a64f
+#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="2D LIVE">
+<div class="poster" data-name="2D"><span><img src="https://thaitvstream.com/application/mtvlive/image/button/9hd.png" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;"> 2D LIVE</p>
+</div>
+<a href="http://freelive2.inwstream.com:1935/freelive-edge/thairahttvhd/playlist.m3u8?NThDUTdLTjBhUFVTRS9tWHRFS2JuWjFkR0t3dHF4MTZlUExuejI5RWVtVkhkTVhxeEx6d2VGQk9pUG9JUVhraDQ4Vm0wNTVhTnhzWHdjZHZjOVYwYzdTa09ySjV3Qk5DWCtpVGVBeG9xVEhiVEJVSDhyZUFJT1NXeWg0SklYdEFTSUVFd2FrRVd0UFQzOER5SEpXaGJ3PT0=,805d1d18971fec1f7ebd8a578414d1a5#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="3D LIVE">
+<div class="poster" data-name="2D"><span><img src="https://thaitvstream.com/application/mtvlive/image/button/thairus.png" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;"> 3D LIVE</p>
+</div>
+<a href="http://freelive2.inwstream.com:1935/freelive-edge/amarinhd/playlist.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="3D LIVE">
+<div class="poster" data-name="2D"><span><img src="https://thaitvstream.com/application/mtvlive/image/button/MASTER-AMRIN.png" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;"> 3D LIVE</p>
+</div>
+<a href="http://221.120.204.4/STAR-MOVIEAS-LOCKLE/tracks-v1a1/mono.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="MOVIE">
+<div class="poster" data-name="movies"><span><img src="http://xem.nhanhnhat.net/image/starmovies.png" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">STARMOVIES</p>
+</div>
+<a href="http://103.139.171.5:5001/play.php?c=Colors_Infinity_HD" title="MOVIE">
+<div class="poster" data-name="movies"><span><img src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Infinity_HD.png" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">STARMOVIES</p>
+</div>
+<a href="http://freelive2.inwstream.com:1935/freelive-edge/fwmov_fw-iptv.stream/playlist.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="MOVIE">
+<div class="poster" data-name="movies"><span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGO5PGVeRWT18Xbxgyoao0MkWoRDFO2KYW0A&usqp=CAU" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;"FW MOV HD</p>
+</div>
+<a href="http://213.151.233.20:8000/dna-6129-tv-pc.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="MOVIE">
+<div class="poster" data-name="movies"><span><img src="http://xem.nhanhnhat.net/image/hbo.png" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">HBO HD1</p>
+</div>
+<a href="https://livecdn.fptplay.net/hda1/hbo_vhls.smil/index.m3u8" title="MOVIE">
+<div class="poster" data-name="movies"><span><img src="http://xem.nhanhnhat.net/image/hbo.png" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">HBO HD2</p>
+</div>
+<a href="http://210.210.155.37/dr9445/h/h14/index.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="MOVIE">
+<div class="poster" data-name="movies"><span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTPyrpm--oApjOinvA6i18Ms5hFAgjN1jV7w&usqp=CAU" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">Celestial Movies</p>
+</div>
+<a href="http://210.210.155.35:80/session/d03d1c0c-736d-11ec-91c4-891a9a5c635e/qwr9ew/s/s31/01.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="MOVIE">
+<div class="poster" data-name="movies"><span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvD6bAYCvKCcke4gVNnK5iJRg1e4FfA7O8zg&usqp=CAU" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">Celestial Movies</p>
+</div>
+<a href="http://freelive2.inwstream.com:1935/freelive-edge/fwsov_fw-iptv.stream/playlist.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;en" title="MOVIE">
+<div class="poster" data-name="movies"><span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-9Qq0Fc_g4qUlOGLzycMkkeNSLWNgmcD2hw&usqp=CAU" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">FW SOV HD</p>
+</div>
+<a href="http://210.210.155.35/dr9445/h/h04/02.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;en" title="MOVIE">
+<div class="poster" data-name="movies"><span><img src="http://xem.nhanhnhat.net/image/cinemaworld.png" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">CINEMAXWORLD</p>
+</div>
+<a href="http://190.171.101.36/Cinemax/tracks-v1a1/mono.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;en" title="MOVIE">
+<div class="poster" data-name="movies"><span><img src="http://xem.nhanhnhat.net/image/cinemax.png" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">CINEMAX</p>
+</div>
+<a href="https://moviesphereuk-samsunguk.amagi.tv/playlist.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;en" title="MOVIE">
+<div class="poster" data-name="movies"><span><img src="https://i.ibb.co/jw20TkH/3dgifmaker09582.gif" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">Movie Sphere</p>
+</div>
+<a href="https://uksono1-samsunguk.amagi.tv/playlist.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;en" title="MOVIE">
+<div class="poster" data-name="movies"><span><img src="https://i.ibb.co/jw20TkH/3dgifmaker09582.gif" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">Comedy Hub</p>
+</div>
+<a href="https://cdn.xtemus.com/m3player.php?id=https://live-hls-web-aje.getaj.net/AJE/index.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="AJE NEWS">
+<div class="poster" data-name="news"><span><img src="https://i.ibb.co/NLMbGqS/4350467-ico.png" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">AJE NEWS</p>
+</div>
+<a href="https://cdn.xtemus.com/m3player.php?id=https://cnn-cnninternational-1-gb.samsung.wurl.com/manifest/playlist_960x540_2000k.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="CNN NEWS">
+<div class="poster" data-name="news"><span><img src="http://static.epg.best/gb/CNN.uk.png" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">CNN NEWS</p>
+</div>
+<a href="https://cdn.xtemus.com/m3player.php?id=https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="CNA NEWS">
+<div class="poster" data-name="news"><span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTprBWEiOvqEBLKJmp5_JZgU36jwbfwlMYzT7yr1SBFomj0Eok&s" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">CNA NEWS</p>
+</div>
+<a href="https://cdn.xtemus.com/m3player.php?id=https://ndtvindiaelemarchana.akamaized.net/hls/live/2003679/ndtvindia/ndtvindiamaster.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="NDTV NEWS">
+<div class="poster" data-name="news"><span><img src="https://i.ibb.co/0jx8fjx/4350438-ico.png" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">NDTV NEWS</p>
+</div>
+<a href="http://92.43.140.249/s24/04.m3u8?fluxustv.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="BBC WORLD">
+<div class="poster" data-name="news"><span><img src="https://i.pinimg.com/originals/d9/aa/15/d9aa159b8be12202613494d3640ebcf9.jpg" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">BBC WORLD</p>
+</div>
+<a href="http://amdlive-ch02.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="ARIRANG">
+<div class="poster" data-name="news"><span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIJB6Tc820LE0umnF6jYJQSrNxbpV4yufPKlOwYg0X5ClS4Og&s" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">ARIRANG</p>
+</div>
+<a href="http://103.139.171.5:5001/play.php?c=BBC_World_News#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="BBC WORLD 2">
+<div class="poster" data-name="news"><span><img src="https://i.pinimg.com/originals/d9/aa/15/d9aa159b8be12202613494d3640ebcf9.jpg" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">BBC WORLD 2</p>
+</div>
+<a href="https://cdn.xtemus.com/m3player.php?id=https://rt-glb.rttv.com/live/rtnews/playlist.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="RT NEWS">
+<div class="poster" data-name="news"><span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsdnhpIeacw0E8DHgn1CdKje3lD_sLryKukA&usqp=CAU" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">RT NEWS</p>
+</div>
+<a href="https://cdn.xtemus.com/m3player.php?id=https://live1.presstv.ir/live/presstv.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="PRESS NEWS">
+<div class="poster" data-name="news"><span><img src="https://www.presstv.ir/custom/images/site/LOGO.gif" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">PRESS NEWS</p>
+</div>
+<a href="https://nhkworld.webcdn.stream.ne.jp/www11/nhkworld-tv/global/2003458/live.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="NHK WORLD">
+<div class="poster" data-name="news"><span><img src="http://mflixadmin.mflix.webstarterz.com/uploads/tv_image/sm/nhk-world.png" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">NHK WORLD</p>
+</div>
+<a href="https://cdn.xtemus.com/m3player.php?id=https://dwamdstream102.akamaized.net:443/hls/live/2015525/dwstream102/index.m3u8#Intent;package=com.exo.videoplayer.ad;S.title=New%20title;end" title="DW ENGLISH">
+<div class="poster" data-name="news"><span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnOf0Xl1UlL57aEQTCTYn7HrwV6S2R7sGtLQ&usqp=CAU" width="110px" height="140px"></span></a>
+</br><p align="center" style="color:gold; font-size:120%;">DW ENGLISH</p>
+</div>
+<br>
+<script>
+				
+const filterItem = document.querySelector(".items");
+const filterImg = document.querySelectorAll(".gallery .poster");
+window.onload = ()=>{ 
+filterItem.onclick = (selectedItem)=>{ 
+if(selectedItem.target.classList.contains("item")){ 
+filterItem.querySelector(".active").classList.remove("active"); 
+selectedItem.target.classList.add("active"); 
+let filterName = selectedItem.target.getAttribute("data-name"); 
+filterImg.forEach((image) => {
+let filterImges = image.getAttribute("data-name"); 
+if((filterImges == filterName) || (filterName == "all")){
+image.classList.remove("hide"); 
+image.classList.add("show"); }
+else{image.classList.add("hide"); image.classList.remove("show"); }});}}
+for (let i = 0; i < filterImg.length; i++) {
+filterImg[i].setAttribute("onclick", "preview(this)"); }}
+</script>
+</body>
+</html>
+    
